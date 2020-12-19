@@ -3,7 +3,52 @@
 @import "fonts";
 @import "global";
 
-
+.header{
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top center;
+  position: relative;
+  &::before{
+    position: absolute;
+    content: "";
+    background-image: url('../images/header__bg-before.png');
+    width: 1199px;
+    height: 58px;
+    bottom: 0;
+  }
+  &__top{
+    background-color: #fff;
+  }
+  &__bottom{
+    text-align: center;
+    padding: 75px 0 80px;
+  }
+  &__bottom-title{
+    @extend %ptsans-bold;
+    font-size: 100px;
+    line-height: 106px;
+    text-transform: uppercase;
+    color: #fff;
+    margin: 20px 0;
+  }
+}
+.menu{
+  &__list{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 56px;
+  }
+  &__list-item.logo{
+    transform: translateY(9px);
+  }
+  &__list-link{
+    @extend %ptsans-bold;
+    font-size: 14px;
+    line-height: 26px;
+    text-transform: uppercase;
+  }
+}
 
 
 @import "media";
