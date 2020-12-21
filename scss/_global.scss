@@ -29,6 +29,7 @@ body{
   @extend %ptsans-regular;
   font-size: 14px;
   line-height: 16px;
+  color: #333333;
 }
 .container{
   max-width: 1230px;
@@ -41,6 +42,7 @@ body{
 }
 .title{
   @extend %ptsans-bold;
+  color: #000;
 }
 .benefits__title{
   font-size: 21px;
