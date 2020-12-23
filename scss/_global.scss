@@ -48,3 +48,26 @@ body{
   font-size: 21px;
   line-height: 24px;
 }
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+.mfp-bg {
+  background: transparent;
+}
+.mfp-close-btn-in .mfp-close{
+  display: none;
+}
+.mfp-content {
+  top: 96px;
+  left: -8px;
+}
