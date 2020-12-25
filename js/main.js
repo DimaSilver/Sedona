@@ -64,4 +64,11 @@ $(function () {
     $('.search-form__nav').on("click", ".search-form__button", function () {
         $(this).addClass('search-form__button--active').siblings().removeClass('search-form__button--active')
     });
+    $('.menu__list').on("click", ".menu__list-item", function () {
+        $(this).addClass('menu__list-item--active').siblings().removeClass('menu__list-item--active')
+    });
+
+    $(".hotels-search__top-pricediapazon").ionRangeSlider();
+
+
 });
