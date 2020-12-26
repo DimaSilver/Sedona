@@ -17,7 +17,7 @@
                     <nav class="menu">
                         <ul class="menu__list">
                             <li class="menu__list-item"><a class="menu__list-link" href="#">Информация</a></li>
-                            <li><a class="menu__list-link" href="#">Фото и видео</a></li>
+                            <li class="menu__list-item"><a class="menu__list-link" href="#">Фото и видео</a></li>
                             <li class="menu__list-item logo"><a class="logo" href="#"><img src="images/logo.png" alt=""></a>
                             </li>
                             <li class="menu__list-item"><a class="menu__list-link" href="#">Карта штата</a></li>
@@ -37,18 +37,21 @@
                                 <h5 class="hotels-search__top-title">Инфраструктура:</h5>
                                 <ul class="hotels-search__top-item__list">
                                     <li class="hotels-search__top-item__list-field">
-                                        <input id="checkbox-1" class="hotels-search__top-item__checkbox" type="checkbox" checked hidden>
+                                        <input id="checkbox-1" class="hotels-search__top-item__checkbox" type="checkbox"
+                                               checked hidden>
                                         <label for="checkbox-1" class="hotels-search__top-item__label"> Бассейн</label>
                                     </li>
                                     <li class="hotels-search__top-item__list-field">
-                                        <input id="checkbox-2" class="hotels-search__top-item__checkbox" type="checkbox" hidden><label for="checkbox-2"
-                                            class="hotels-search__top-item__label">
+                                        <input id="checkbox-2" class="hotels-search__top-item__checkbox" type="checkbox"
+                                               hidden><label for="checkbox-2"
+                                                             class="hotels-search__top-item__label">
                                         Парковка
                                     </label>
                                     </li>
                                     <li class="hotels-search__top-item__list-field">
-                                        <input id="checkbox-3" class="hotels-search__top-item__checkbox" type="checkbox" hidden><label for="checkbox-3"
-                                            class="hotels-search__top-item__label">
+                                        <input id="checkbox-3" class="hotels-search__top-item__checkbox" type="checkbox"
+                                               hidden><label for="checkbox-3"
+                                                             class="hotels-search__top-item__label">
                                         Wi-Fi
                                     </label>
                                     </li>
@@ -58,20 +61,23 @@
                                 <h5 class="hotels-search__top-title">Тип жилья:</h5>
                                 <ul class="hotels-search__top-item__list">
                                     <li class="hotels-search__top-item__list-field">
-                                        <input id="checkbox-4" class="hotels-search__top-item__checkbox" type="checkbox" checked hidden><label for="checkbox-4"
-                                            class="hotels-search__top-item__label">
+                                        <input id="checkbox-4" class="hotels-search__top-item__checkbox" type="checkbox"
+                                               checked hidden><label for="checkbox-4"
+                                                                     class="hotels-search__top-item__label">
                                         Гостиница
                                     </label>
                                     </li>
                                     <li class="hotels-search__top-item__list-field">
-                                        <input id="checkbox-5" class="hotels-search__top-item__checkbox" type="checkbox" checked hidden><label for="checkbox-5"
-                                            class="hotels-search__top-item__label">
+                                        <input id="checkbox-5" class="hotels-search__top-item__checkbox" type="checkbox"
+                                               checked hidden><label for="checkbox-5"
+                                                                     class="hotels-search__top-item__label">
                                         Мотель
                                     </label>
                                     </li>
                                     <li class="hotels-search__top-item__list-field">
-                                        <input id="checkbox-6" class="hotels-search__top-item__checkbox" type="checkbox" checked hidden><label for="checkbox-6"
-                                            class="hotels-search__top-item__label">
+                                        <input id="checkbox-6" class="hotels-search__top-item__checkbox" type="checkbox"
+                                               checked hidden><label for="checkbox-6"
+                                                                     class="hotels-search__top-item__label">
                                         Апартаменты
                                     </label>
                                     </li>
@@ -80,24 +86,26 @@
                         </div>
                         <div class="hotels-search__top-right">
                             <h5 class="hotels-search__top-title">Стоимость в сутки (Р):</h5>
-                            <input class="hotels-search__top-pricediapazon" type="text" data-type="double" data-min="0" data-max="4000" data-step="100" data-from="0" data-to="3000">
+                            <input class="hotels-search__top-pricediapazon" type="text" data-type="double" data-min="0"
+                                   data-max="4000" data-step="100" data-from="0" data-to="3000">
                             <button class="hotels-search__top-btn">Показать</button>
                         </div>
                     </div>
                 </div>
             </div>
             <div class="hotels-search__bottom">
-                <div class="hotels-search__bottom-filter">
+                <div class="hotels-search__bottom-filter hotels-search__line">
                     <div class="container-content">
                         <div class="hotels-search__bottom-filter__inner">
                             <div class="hotels-search__bottom-filter__left">
-                                <h4 class="hotels-search__bottom-filter__title">Найдено <span>3</span></h4>
+                                <h4 class="hotels-search__bottom-filter__title">Найдено: <span>3</span></h4>
                                 <div class="hotels-search__bottom-filter__sort">
                                     <p class="hotels-search__bottom-filter__sort-title">Сортировка:</p>
                                     <ul class="hotels-search__bottom-filter__sort-list">
-                                        <li class="hotels-search__bottom-filter__sort-list__item"><a
-                                                class="hotels-search__bottom-filter__sort-list__link" href="#">По
-                                            цене</a></li>
+                                        <li class="hotels-search__bottom-filter__sort-list__item hotels-search__bottom-filter__sort-list__item--active">
+                                            <a
+                                                    class="hotels-search__bottom-filter__sort-list__link" href="#">По
+                                                цене</a></li>
                                         <li class="hotels-search__bottom-filter__sort-list__item"><a
                                                 class="hotels-search__bottom-filter__sort-list__link" href="#">По
                                             типу</a></li>
@@ -110,25 +118,33 @@
                             <div class="hotels-search__bottom-filter__right">
                                 <div class="hotels-search__bottom-filter__arrows">
                                     <a class="hotels-search__bottom-filter__arrow" href="#"></a>
-                                    <a class="hotels-search__bottom-filter__arrow" href="#"></a>
+                                    <a class="hotels-search__bottom-filter__arrow hotels-search__bottom-filter__arrow--active"
+                                       href="#"></a>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="hotels-search__item">
-                    <div class="container-content">
-                        <div class="hotels-search__item">
+                <div class="hotels-search__items">
+                    <div class="hotels-search__item hotels-search__line">
+                        <div class="container-content">
                             <div class="hotels-search__item-inner">
                                 <div class="hotels-search__item-content">
-                                    <img class="hotels-search__item-content__img" src="images/hotels-search__img1.jpg"
-                                         alt="">
+                                    <div class="hotels-search__item-content__img-wrapper">
+                                        <img class="hotels-search__item-content__img"
+                                             src="images/hotels-search__img1.jpg"
+                                             alt="">
+                                    </div>
                                     <div class="hotels-search__item-content__textarea">
-                                        <h3 class="hotels-search__item-content__title">Amara Resort & Spa</h3>
-                                        <p class="hotels-search__item-content__field">Гостиница</p>
-                                        <p class="hotels-search__item-content__field">От 4000 Р.</p>
-                                        <a class="hotels-search__item-content__link" href="#">Подробнее</a>
-                                        <a class="hotels-search__item-content__link" href="#">Забронировать</a>
+                                        <a class="hotels-search__item-content__title title" href="#">Amara Resort & Spa</a>
+                                        <div class="hotels-search__item-content__fields">
+                                            <p class="hotels-search__item-content__field">Гостиница</p>
+                                            <p class="hotels-search__item-content__field">От 4000 Р.</p>
+                                        </div>
+                                        <div class="hotels-search__item-content__links">
+                                            <a class="hotels-search__item-content__link" href="#">Подробнее</a>
+                                            <a class="hotels-search__item-content__link" href="#">Забронировать</a>
+                                        </div>
                                     </div>
                                 </div>
                                 <div class="hotels-search__item-rate">
@@ -152,24 +168,30 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="hotels-search__item">
+                    </div>
+                    <div class="hotels-search__item hotels-search__line">
+                        <div class="container-content">
                             <div class="hotels-search__item-inner">
                                 <div class="hotels-search__item-content">
-                                    <img class="hotels-search__item-content__img" src="images/hotels-search__img2.jpg"
-                                         alt="">
+                                    <div class="hotels-search__item-content__img-wrapper">
+                                        <img class="hotels-search__item-content__img"
+                                             src="images/hotels-search__img2.jpg"
+                                             alt="">
+                                    </div>
                                     <div class="hotels-search__item-content__textarea">
-                                        <h3 class="hotels-search__item-content__title">Desert Quail Inn</h3>
-                                        <p class="hotels-search__item-content__field">Мотель</p>
-                                        <p class="hotels-search__item-content__field">От 3000 Р.</p>
-                                        <a class="hotels-search__item-content__link" href="#">Подробнее</a>
-                                        <a class="hotels-search__item-content__link" href="#">Забронировать</a>
+                                        <a class="hotels-search__item-content__title title" href="#">Desert Quail Inn</a>
+                                        <div class="hotels-search__item-content__fields">
+                                            <p class="hotels-search__item-content__field">Мотель</p>
+                                            <p class="hotels-search__item-content__field">От 3000 Р.</p>
+                                        </div>
+                                        <div class="hotels-search__item-content__links">
+                                            <a class="hotels-search__item-content__link" href="#">Подробнее</a>
+                                            <a class="hotels-search__item-content__link" href="#">Забронировать</a>
+                                        </div>
                                     </div>
                                 </div>
                                 <div class="hotels-search__item-rate">
                                     <ul class="star-list">
-                                        <li class="star-list__item"><img
-                                                class="star-list__link" src="images/star.png" alt=""
-                                        ></li>
                                         <li class="star-list__item"><img
                                                 class="star-list__link" src="images/star.png" alt=""
                                         ></li>
@@ -186,27 +208,30 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="hotels-search__item">
+                    </div>
+                    <div class="hotels-search__item hotels-search__line">
+                        <div class="container-content">
                             <div class="hotels-search__item-inner">
                                 <div class="hotels-search__item-content">
-                                    <img class="hotels-search__item-content__img" src="images/hotels-search__img3.jpg"
-                                         alt="">
+                                    <div class="hotels-search__item-content__img-wrapper">
+                                        <img class="hotels-search__item-content__img"
+                                             src="images/hotels-search__img3.jpg"
+                                             alt="">
+                                    </div>
                                     <div class="hotels-search__item-content__textarea">
-                                        <h3 class="hotels-search__item-content__title">Villas at Poco Diablo</h3>
-                                        <p class="hotels-search__item-content__field">Апартаменты</p>
-                                        <p class="hotels-search__item-content__field">От 2000 Р.</p>
-                                        <a class="hotels-search__item-content__link" href="#">Подробнее</a>
-                                        <a class="hotels-search__item-content__link" href="#">Забронировать</a>
+                                        <a class="hotels-search__item-content__title title" href="#">Villas at Poco Diablo</a>
+                                        <div class="hotels-search__item-content__fields">
+                                            <p class="hotels-search__item-content__field">Апартаменты</p>
+                                            <p class="hotels-search__item-content__field">От 2000 Р.</p>
+                                        </div>
+                                        <div class="hotels-search__item-content__links">
+                                            <a class="hotels-search__item-content__link" href="#">Подробнее</a>
+                                            <a class="hotels-search__item-content__link" href="#">Забронировать</a>
+                                        </div>
                                     </div>
                                 </div>
                                 <div class="hotels-search__item-rate">
                                     <ul class="star-list">
-                                        <li class="star-list__item"><img
-                                                class="star-list__link" src="images/star.png" alt=""
-                                        ></li>
-                                        <li class="star-list__item"><img
-                                                class="star-list__link" src="images/star.png" alt=""
-                                        ></li>
                                         <li class="star-list__item"><img
                                                 class="star-list__link" src="images/star.png" alt=""
                                         ></li>
