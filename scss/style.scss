@@ -3,6 +3,7 @@
 @import "fonts";
 @import "global";
 
+/*start header*/
 .header {
   background-size: cover;
   background-repeat: no-repeat;
@@ -38,6 +39,9 @@
     background-position: center center;
   }
 }
+/*end header*/
+
+/*start menu*/
 .menu {
   &__list {
     display: flex;
@@ -66,6 +70,9 @@
     color: #766357;
   }
 }
+/*end menu*/
+
+/*start benefits*/
 .benefits {
   &__wrapper {
     max-height: 256px;
@@ -131,6 +138,9 @@
     }
   }
 }
+/*end benefits*/
+
+/*start search*/
 .search {
   position: relative;
   &-top {
@@ -343,6 +353,9 @@
     }
   }
 }
+/*end search*/
+
+/*start footer*/
 .footer{
   position: absolute;
   bottom: 0;
@@ -430,6 +443,9 @@
     position: static;
   }
 }
+/*end footer*/
+
+/*start hotels-search*/
 .hotels-search{
   &__top{
     background-image: url('../images/filter__hotels-bg.jpg');
@@ -836,6 +852,9 @@
 .irs-single{
   display: none;
 }
+/*end hotels-search*/
+
+/*start gallery*/
 .gallery{
   &__top{
     padding: 105px 0 65px;
@@ -888,8 +907,69 @@
       top: 10px;
     }
   }
-  .gallery__bottom-item__info-left__text{
+  &__bottom-item__info-left__text{
     text-transform: none;
   }
 }
+/*end gallery*/
+
+/*start video*/
+.video{
+  text-align: center;
+  padding: 65px 0 85px;
+  &__title{
+    font-size: 30px;
+    line-height: 35px;
+    margin-bottom: 30px;
+  }
+  &__textarea{
+    max-width: 420px;
+    margin: 0 auto;
+    margin-bottom: 70px;
+  }
+  &__watch{
+    position: relative;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  &__watch-info{
+    position: absolute;
+    background-color: rgba(#000, .6);
+    right: 0;
+    left: 0;
+    bottom: 2px;
+    display: flex;
+    justify-content: space-between;
+    padding: 36px 42px 37px 35px;
+    align-items: center;
+  }
+  &__watch-info__timeline{
+    max-width: 540px;
+    width: 100%;
+    height: 3px;
+    background-color: rgba(#fff, .2);
+    position: relative;
+    &::before{
+      position: absolute;
+      content: "";
+      width: 9px;
+      height: 9px;
+      background-color: #fff;
+      border-radius: 50%;
+      top: -3px;
+      left: 113px;
+    }
+  }
+  &__watch-info__fullscreen{
+    margin-left: 31px;
+  }
+  &__cursor{
+    cursor: pointer;
+  }
+}
+/*end video*/
+
+
+
+
 @import "media";
