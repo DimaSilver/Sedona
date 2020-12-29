@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.min.css">
+</head>
+<body>
+<div class="container">
+    <header class="header header__change" style="background-image: url('images/header__bg.jpg');">
+        <div class="header__inner">
+            <div class="header__top">
+                <nav class="menu">
+                    <ul class="menu__list">
+                        <li class="menu__list-item"><a class="menu__list-link" href="#">Информация</a></li>
+                        <li><a class="menu__list-link" href="#">Фото и видео</a></li>
+                        <li class="menu__list-item logo"><a class="logo" href="#"><img src="images/logo.png" alt=""></a>
+                        </li>
+                        <li class="menu__list-item"><a class="menu__list-link" href="#">Форма отзыва</a></li>
+                        <li class="menu__list-item"><a class="menu__list-link" href="#">HTML academy</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+        <div class="header__bottom">
+            <h1 class="header__bottom-title title">Sedona</h1>
+        </div>
+    </header>
+</div>
+<div class="container__small">
+    <section class="review">
+        <div class="review__textarea">
+            <h1 class="review__title title">Оставьте свой отзыв</h1>
+            <p class="review__title">Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
+        </div>
+        <div class="review__items">
+            <div class="review__item">
+                <h3 class="review__item-title review__second-title">ВАше Общее впечатление:</h3>
+                    <label class="review__item-label">
+                        <input type="radio" class="review__input review__radio">
+                        Скорее положительное
+                    </label>
+                    <label class="review__item-label">
+                        <input type="radio" class="review__input review__radio">
+                        Скорее отрицательное
+                    </label>
+                    <label class="review__item-label">
+                        <input type="radio" class="review__input review__radio">
+                        Затрудняюсь ответить
+                    </label>
+            </div>
+            <div class="review__item">
+                <h3 class="review__item-title review__second-title">Представьтесь:</h3>
+                <label class="review__item-label">
+                    ИМЯ*:
+                    <input type="text" class="review__input" placeholder="Петр">
+                </label>
+                <label class="review__item-label">
+                    ФАМИЛИЯ*:
+                    <input type="text" class="review__input" placeholder="Иванов">
+                </label>
+                <label class="review__item-label">
+                    Отчество:
+                    <input type="text" class="review__input" placeholder="Александрович">
+                </label>
+            </div>
+        </div>
+        <div class="review__contacts">
+            <h3 class="review__contacts-title review__second-title">Контактная информация:</h3>
+            <label class="review__item-label review__contacts-label">
+                Телефон*:
+                <input type="text" class="review__input review__contacts-input" placeholder="Введите телефон">
+            </label>
+            <label class="review__item-label review__contacts-label">
+                Электронная почта*:
+                <input type="text" class="review__input review__contacts-input" placeholder="Введите e-mail">
+            </label>
+        </div>
+        <div class="review__sights">
+            <h3 class="review__sightstitle review__second-title">Контактная информация:</h3>
+            <ul class="review__sights-list">
+                <li class="review__sights-list__field"><label class="review__sights-list__field-label"><input
+                        class="review__sights-list__field-checkbox" type="checkbox">Мост Дьявола</label></li>
+                <li class="review__sights-list__field"><label class="review__sights-list__field-label"><input
+                        class="review__sights-list__field-checkbox" type="checkbox">Гора-Колокол</label></li>
+                <li class="review__sights-list__field"><label class="review__sights-list__field-label"><input
+                        class="review__sights-list__field-checkbox" type="checkbox">Слайд-парк</label></li>
+                <li class="review__sights-list__field"><label class="review__sights-list__field-label"><input
+                        class="review__sights-list__field-checkbox" type="checkbox">Красные скалы</label></li>
+            </ul>
+        </div>
+        <div class="review__emotions">
+            <h3 class="review__emotions-title review__second-title">Опишите свои эмоции:</h3>
+            <textarea class="review__input review__emotions-textzone" placeholder="Опишите подробно все свои восторги "></textarea>
+        </div>
+        <button class="review__btn" type="submit">ОТПРАВИТЬ ОТЗЫВ</button>
+        <p class="review__description">* — обязательные поля</p>
+    </section>
+    <footer class="footer footer__min">
+        <div class="footer__inner">
+            <a class="footer__link" href="#">#visitSEDONA</a>
+            <ul class="footer__social">
+                <li class="footer__social-item"><a class="footer__social-link" href="#"><img
+                        src="images/twitter__footer.png" alt=""></a></li>
+                <li class="footer__social-item"><a class="footer__social-link" href="#"><img
+                        src="images/facebook__footer.png" alt=""></a></li>
+                <li class="footer__social-item"><a class="footer__social-link" href="#"><img
+                        src="images/youtube__footer.png" alt=""></a></li>
+            </ul>
+            <div class="footer__by">
+                <p class="footer__by-text">Website by</p>
+                <a class="footer__by-link" href="#"></a>
+            </div>
+        </div>
+    </footer>
+</div>
+<script src="js/main.min.js"></script>
+</body>
+</html>
