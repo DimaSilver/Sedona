@@ -80,4 +80,5 @@ $(function () {
     $('.hotels-search__item-content__title').on("click", function () {
        $(this).toggleClass('hotels-search__item-content__title--active')
     });
+    $('input').styler();
 });
