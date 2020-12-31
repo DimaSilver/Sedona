@@ -23,6 +23,26 @@ $(function () {
                 }
             }
         });
+        $('.review__description').magnificPopup({
+            type: 'inline',
+            preloader: false,
+            focus: '#review__fail',
+            modal: true
+        });
+        $(document).on('click', '.review__fail-btn', function (e) {
+            e.preventDefault();
+            $.magnificPopup.close();
+        });
+        $('.review__btn').magnificPopup({
+            type: 'inline',
+            preloader: false,
+            focus: '#review__success',
+            modal: true
+        });
+        $(document).on('click', '.review__success-btn', function (e) {
+            e.preventDefault();
+            $.magnificPopup.close();
+        });
     });
     $('.search-form__btn').on('click', function () {
         $(this).toggleClass('search-form__btn--active')

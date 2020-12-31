@@ -115,10 +115,27 @@
                         <textarea class="review__input review__emotions-textzone"
                                   placeholder="Опишите подробно все свои восторги "></textarea>
                     </div>
-                    <a class="review__btn" href="#">ОТПРАВИТЬ ОТЗЫВ</a>
-                    <p class="review__description">* — обязательные поля</p>
+                    <a class="review__btn btn" href="#review__success">ОТПРАВИТЬ ОТЗЫВ</a>
+                    <a class="review__description" href="#review__fail">* — обязательные поля</a>
                 </form>
             </section>
+            <div id="review__fail" class="review__fail mfp-hide white-popup-block">
+                <h3 class="review__fail-title title">Что-то пошло <br>
+                    не так!</h3>
+                <p class="review__fail-text">
+                    Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
+                <a class="review__fail-btn btn" href="#">OK</a>
+            </div>
+            <div id="review__success" class="review__success mfp-hide white-popup-block">
+                <div class="review__success-top">
+                    <h3 class="review__success-title title">Ваш отзыв отправлен!</h3>
+                    <p class="review__success-text">Спасибо за ваше участие, ваш отзыв уже поступил к нам.
+                        В ближайшее время мы опубликуем его на сайте.</p>
+                </div>
+                <div class="review__success-bottom">
+                    <a class="review__success-btn btn" href="#">ЗАКРЫТЬ ОКНО</a>
+                </div>
+            </div>
             <footer class="footer footer__min">
                 <div class="footer__inner">
                     <a class="footer__link" href="#">#visitSEDONA</a>
