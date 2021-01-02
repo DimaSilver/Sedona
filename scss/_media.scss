@@ -60,6 +60,9 @@
   .benefits__top {
     padding: 50px 0 45px;
   }
+  .search-top__link {
+    padding: 25px 95px 26px;
+  }
 }
 @media(max-width: 830px){
   .menu__list-item.logo {
@@ -77,5 +80,12 @@
   }
   .benefits__items-positions .benefits__item-title {
     margin: 0 0 13px;
+  }
+  .search-top__text {
+    max-width: 88%;
+    margin: 0 auto 45px;
+  }
+  .index .container{
+    padding: 0;
   }
 }
