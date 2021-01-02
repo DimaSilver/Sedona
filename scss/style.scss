@@ -103,6 +103,7 @@
   }
   &__position-title.benefits__title {
     color: #fff;
+    margin-bottom: 26px;
   }
   &__position-img__wrapper {
     overflow: hidden;
@@ -114,7 +115,7 @@
     margin-top: -75px;
   }
   &__position-text {
-    margin: 26px 0;
+    margin-bottom: 26px;
   }
   &__items {
     display: flex;
@@ -130,12 +131,12 @@
   &__items-positions {
     background-color: #eeeeee;
     & .benefits__item {
-      padding: 45px 73px 40px;
+      padding: 45px 73px 60px;
     }
     & .benefits__item-title {
       margin: 0 0 25px;
     }
-    & .benefits__item-text {
+    & .benefits__item-num {
       margin-bottom: 25px;
     }
   }
