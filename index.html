@@ -11,6 +11,29 @@
 <body class="index">
 <div class="container">
     <div class="content__wrapper">
+        <nav class="menu menu__slick">
+            <div class="menu__close">
+                <div></div>
+                <div></div>
+            </div>
+            <ul class="menu__list-mobile">
+                <li class="menu__list-item"><a class="menu__list-link" href="#">Главная</a></li>
+                <li class="menu__list-item"><a class="menu__list-link" href="#">Фото и видео</a></li>
+                <li class="menu__list-item logo"><a class="logo" href="#">
+                    <picture>
+                        <source srcset="images/logo__tablet.png" media="(max-width: 830px)">
+                        <img src="images/logo.png" alt=""></picture>
+                </a>
+                </li>
+                <li class="menu__list-item"><a class="menu__list-link" href="#">Форма отзыва</a></li>
+                <li class="menu__list-item"><a class="menu__list-link" href="#">HTML academy</a></li>
+            </ul>
+            <div class="menu__mobile">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+        </nav>
         <header class="header" style="background-image: url('images/header__bg.jpg');">
             <div class="header__top">
                 <nav class="menu">
@@ -27,6 +50,7 @@
                         <li class="menu__list-item"><a class="menu__list-link" href="#">HTML academy</a></li>
                     </ul>
                 </nav>
+                <a class="logo__mobile" href="#"><img src="images/logo__mobile.png" alt=""></a>
             </div>
             <div class="header__bottom">
                 <img class="header__bottom-img" src="images/header__bg-top.png" alt="">
@@ -34,7 +58,7 @@
                 <img class="header__bottom-img" src="images/header__bg-bottom.png" alt="">
             </div>
         </header>
-        <section class="benefits">
+        <!--<section class="benefits">
             <div class="benefits__top benefits__wrapper">
                 <h4 class="benefits__phrase benefits__title title">Седона — небольшой городок в Аризоне,
                     заслуживающий большего!
@@ -165,7 +189,7 @@
                 </label>
                 <button class="search-form__btn" type="submit">Найти</button>
             </div>
-        </form>
+        </form>-->
     </div>
 </div>
 <script src="js/main.min.js"></script>

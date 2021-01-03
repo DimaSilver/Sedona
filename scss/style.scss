@@ -71,9 +71,14 @@
   &__list-item.menu__list-item--active{
     color: #766357;
   }
+  &__slick{
+    display: none;
+  }
 }
 /*end menu*/
-
+.logo__mobile{
+  display: none;
+}
 /*start benefits*/
 .benefits {
   &__wrapper {

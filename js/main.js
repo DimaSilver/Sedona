@@ -101,4 +101,10 @@ $(function () {
        $(this).toggleClass('hotels-search__item-content__title--active')
     });
     $('.review__input, .review__sights-list__field-checkbox').styler();
+    $('.menu__mobile').on('click', function(){
+        $('.menu__list-mobile').slideToggle();
+    });
+    $('.menu__close').on('click', function(){
+        $('.menu__list-mobile').slideToggle();
+    });
 });
