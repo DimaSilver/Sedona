@@ -107,4 +107,13 @@ $(function () {
     $('.menu__close').on('click', function(){
         $('.menu__list-mobile').slideToggle();
     });
+    $('.review__item-label').on('click', function(){
+        $(this).addClass('review__item-label--active').siblings().removeClass('review__item-label--active')
+    });
+    $('.review__sights-list').on("click", ".review__sights-list__field", function () {
+        $(this).addClass('review__sights-list__field--active').siblings().removeClass('review__sights-list__field--active')
+    });
+    $('.review__item-labels').on("click", ".review__item-label", function () {
+        $(this).addClass('review__item-label--active').siblings().removeClass('review__item-label--active')
+    });
 });
