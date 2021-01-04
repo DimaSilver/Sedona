@@ -58,18 +58,17 @@
                 <img class="header__bottom-img" src="images/header__bg-bottom.png" alt="">
             </div>
         </header>
-        <!--<section class="benefits">
+        <section class="benefits">
             <div class="benefits__top benefits__wrapper">
                 <h4 class="benefits__phrase benefits__title title">Седона — небольшой городок в Аризоне,
                     заслуживающий большего!
                 </h4>
                 <p class="benefits__text">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
             </div>
-            <div class="benefits__position">
+            <div class="benefits__position benefits__position-normal">
                 <div class="benefits__position-textarea">
                     <h6 class="benefits__position-title benefits__title title">
                         Настоящий
-                        <br>
                         городок
                     </h6>
                     <p class="benefits__position-text benefits__item-num">— №1 —</p>
@@ -79,30 +78,39 @@
                     <img class="benefits__position-img" src="images/benefits__position-1.jpg" alt="">
                 </div>
             </div>
-            <div class="benefits__items">
+            <div class="benefits__items benefits__top-items">
                 <div class="benefits__item">
-                    <img class="benefits__item-img" src="images/benefits__item-1.png" alt="">
+                    <picture>
+                        <source srcset="images/benefits__item-1-mobile.png" media="(max-width: 550px)">
+                        <img class="benefits__item-img" src="images/benefits__item-1.png" alt="">
+                    </picture>
                     <p class="benefits__item-title benefits__title title">Жильё</p>
                     <p class="benefits__item-text">Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
                 </div>
                 <div class="benefits__item">
-                    <img class="benefits__item-img" src="images/benefits__item-2.png" alt="">
+                    <picture>
+                        <source srcset="images/benefits__item-2-mobile.png" media="(max-width: 550px)">
+                        <img class="benefits__item-img" src="images/benefits__item-2.png" alt="">
+                    </picture>
                     <p class="benefits__item-title benefits__title title">Еда</p>
                     <p class="benefits__item-text">Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
                 </div>
                 <div class="benefits__item">
-                    <img class="benefits__item-img" src="images/benefits__item-3.png" alt="">
+                    <picture>
+                        <source srcset="images/benefits__item-3-mobile.png" media="(max-width: 550px)">
+                        <img class="benefits__item-img" src="images/benefits__item-3.png" alt="">
+                    </picture>
                     <p class="benefits__item-title benefits__title title">Сувениры</p>
                     <p class="benefits__item-text">Не только китайского, но и местного производства!</p>
                 </div>
             </div>
-            <div class="benefits__position benefits__wrapper">
+            <div class="benefits__position benefits__position-revert">
                 <div class="benefits__position-img__wrapper">
                     <img class="benefits__position-img" src="images/benefits__position-2.jpg" alt="">
                 </div>
                 <div class="benefits__position-textarea">
                     <h6 class="benefits__position-title benefits__title title">
-                        Там есть <br>
+                        Там есть
                         Мост дьявола
                     </h6>
                     <p class="benefits__position-text benefits__item-num"> — №2 —</p>
@@ -165,31 +173,32 @@
                 </div>
             </footer>
         </section>
-        <form id="search-form" class="mfp-hide white-popup-block search-form">
-            <div class="search-form__inner">
-                <label class="search-form__label">
-                    Дата заезда:
-                    <input type="text" class="search-form__input" placeholder="24 Апреля 2017">
-                    <button class="search-form__input-btn" type="button"></button>
-                </label>
-                <label class="search-form__label">
-                    Дата выезда:
-                    <input type="text" class="search-form__input" placeholder="4 июля 2017">
-                    <button class="search-form__input-btn" type="button"></button>
-                </label>
-                <label class="search-form__label search-form__label-guests">
-                    Взрослые:
-                    <input class="guests search-form__input search-form__input-numerous" type="number" min="1" max="9"
-                           step="1" value="2">
-                </label>
-                <label class="search-form__label search-form__label-guests">
-                    Дети:
-                    <input class="guests search-form__input search-form__input-numerous" type="number" min="0" max="9"
-                           step="1" value="0">
-                </label>
-                <button class="search-form__btn" type="submit">Найти</button>
-            </div>
-        </form>-->
+        <!--
+       <form id="search-form" class="mfp-hide white-popup-block search-form">
+           <div class="search-form__inner">
+               <label class="search-form__label">
+                   Дата заезда:
+                   <input type="text" class="search-form__input" placeholder="24 Апреля 2017">
+                   <button class="search-form__input-btn" type="button"></button>
+               </label>
+               <label class="search-form__label">
+                   Дата выезда:
+                   <input type="text" class="search-form__input" placeholder="4 июля 2017">
+                   <button class="search-form__input-btn" type="button"></button>
+               </label>
+               <label class="search-form__label search-form__label-guests">
+                   Взрослые:
+                   <input class="guests search-form__input search-form__input-numerous" type="number" min="1" max="9"
+                          step="1" value="2">
+               </label>
+               <label class="search-form__label search-form__label-guests">
+                   Дети:
+                   <input class="guests search-form__input search-form__input-numerous" type="number" min="0" max="9"
+                          step="1" value="0">
+               </label>
+               <button class="search-form__btn" type="submit">Найти</button>
+           </div>
+       </form>-->
     </div>
 </div>
 <script src="js/main.min.js"></script>
