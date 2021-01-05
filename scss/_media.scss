@@ -94,6 +94,19 @@
     width: 135%;
     margin-left: -80px;
   }
+  .search-form__input {
+    width: 310px;
+  }
+  .search-form__input-numerous{
+    width: 114px !important;
+  }
+  .search-form__label:nth-child(3) {
+    margin-right: 13px;
+  }
+  .search-form__btn {
+    padding: 16px 180px 17px;
+    margin-top: 40px;
+  }
 }
 @media(max-width: 650px) {
   .benefits__items-positions .benefits__item {
@@ -198,12 +211,22 @@
       &:hover{
         color: #fff;
       }
+      &.menu__list-item--active{
+        .menu__list-link{
+          background-color: #5496bd;
+          color: rgba(#fff, .3);
+        }
+      }
     }
     & .menu__list-item .menu__list-link{
       padding: 17px 20px 18px;
       width: 100%;
       background-color: #81b3d2;
       text-align: center;
+      transition: all .3s;
+      &:hover{
+        background-color: #669ec0;
+      }
     }
   }
   .menu__list {
@@ -266,6 +289,31 @@
       margin-top: 4px;
     }
   }
+  .footer{
+    position: static;
+  }
+  .footer__inner{
+    flex-direction: column;
+  }
+  .footer__link,
+  .footer__social{
+    margin-bottom: 39px;
+  }
+  .search-form {
+    max-width: 535px;
+  }
+  .search-form__inner{
+    justify-content: flex-start;
+  }
+  .search-form__input {
+    width: 280px;
+  }
+  .search-form__label:nth-child(3) {
+    margin-right: 45px;
+  }
+  .search-form__label:nth-child(4) .search-form__input-numerous {
+    margin-left: 73px;
+  }
 }
 @media(max-width: 550px){
   .benefits__top-items{
@@ -295,6 +343,26 @@
   .benefits__item-title {
     margin: 0 0 25px 0;
   }
+  .search-top__title {
+    font-size: 27px;
+    line-height: 32px
+  }
+  .search-top__text {
+    margin: 0 auto 40px;
+  }
+  .search-form{
+    padding: 40px;
+    max-width: 480px;
+  }
+  .search-form__inner{
+    justify-content: center;
+  }
+  .search-form__btn {
+    padding: 16px 150px 17px;
+  }
+  .search-form__label:nth-child(4) .search-form__input-numerous {
+    margin-left: 29px;
+  }
 }
 @media(max-width: 500px){
   .header__bottom-title {
@@ -303,6 +371,57 @@
   }
   .header__bottom-img{
     width: 55%;
+  }
+  .search-top {
+    padding-top: 40px;
+  }
+  .search-top__link {
+    padding: 25px 60px 26px;
+  }
+  .search-top__title {
+    font-size: 24px;
+    line-height: 29px;
+  }
+  .search-bottom iframe {
+    height: 500px;
+  }
+  .search-form__label:nth-child(1),
+  .search-form__label:nth-child(2){
+    .search-form__input {
+      width: 230px;
+    }
+  }
+  .search-form{
+    max-width: 450px;
+  }
+}
+@media(max-width: 450px) {
+  .search-top__link {
+    padding: 25px 40px 26px;
+  }
+  .search-bottom iframe {
+    height: 450px;
+  }
+  .search-form__label + .search-form__label {
+    margin-top: 20px;
+  }
+  .search-form__label:nth-child(1) .search-form__input, .search-form__label:nth-child(2) .search-form__input {
+    width: 200px;
+  }
+  .search-form__label:nth-child(3) {
+    margin-right: 81px;
+  }
+  .search-form__label:nth-child(4){
+    margin-right: 37px;
+  }
+  .search-form {
+    padding: 30px;
+  }
+  .search-form__btn {
+    padding: 12px 120px 13px;
+    font-size: 18px;
+    line-height: 23px;
+    margin-top: 25px;
   }
 }
 @media(max-width: 400px){
@@ -314,6 +433,40 @@
     width: 150%;
     margin-left: -80px;
   }
+  .search-bottom iframe {
+    height: 400px;
+  }
+  .search-top__title {
+    font-size: 21px;
+    line-height: 26px;
+  }
+  .search-top {
+    padding-top: 33px;
+  }
+  .search-form__label:nth-child(1) .search-form__input, .search-form__label:nth-child(2) .search-form__input {
+    width: 170px;
+  }
+  .search-form__label:nth-child(3) {
+    margin-right: 55px;
+  }
+  .search-form__label:nth-child(4) {
+    margin-right: 11px;
+  }
+}
+@media(max-width: 380px){
+  .search-top__link {
+    padding: 20px 20px 21px;
+    font-size: 18px;
+    line-height: 21px;
+  }
+}
+@media(max-width: 360px){
+  .search-form__btn {
+    padding: 12px 100px 13px;
+  }
+  .search-form {
+    padding: 10px;
+  }
 }
 @media(max-width:350px){
   .benefits__position-img {
@@ -321,5 +474,11 @@
   }
   .benefits__top-items {
     padding: 35px 0 35px;
+  }
+  .search-bottom iframe {
+    height: 350px;
+  }
+  .search-top {
+    padding-top: 28px;
   }
 }

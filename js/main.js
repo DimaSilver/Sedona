@@ -116,4 +116,7 @@ $(function () {
     $('.review__item-labels').on("click", ".review__item-label", function () {
         $(this).addClass('review__item-label--active').siblings().removeClass('review__item-label--active')
     });
+    $('.menu__list-mobile').on("click", ".menu__list-item", function () {
+        $(this).addClass('menu__list-item--active').siblings().removeClass('menu__list-item--active')
+    });
 });
