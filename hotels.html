@@ -8,23 +8,47 @@
     <title>Document</title>
     <link rel="stylesheet" href="css/style.min.css">
 </head>
-<body>
+<body class="hotels">
 <div class="container">
     <div class="content__wrapper">
+        <nav class="menu menu__slick">
+            <div class="menu__close">
+                <div></div>
+                <div></div>
+            </div>
+            <ul class="menu__list-mobile">
+                <li class="menu__list-item menu__list-item--active"><a class="menu__list-link" href="#">Главная</a></li>
+                <li class="menu__list-item"><a class="menu__list-link" href="#">Фото и видео</a></li>
+                <li class="menu__list-item logo"><a class="logo" href="#">
+                    <picture>
+                        <source srcset="images/logo__tablet.png" media="(max-width: 830px)">
+                        <img src="images/logo.png" alt=""></picture>
+                </a>
+                </li>
+                <li class="menu__list-item"><a class="menu__list-link" href="#">Форма отзыва</a></li>
+                <li class="menu__list-item"><a class="menu__list-link" href="#">HTML academy</a></li>
+            </ul>
+            <div class="menu__mobile">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+        </nav>
         <header class="header header__min">
             <div class="header__inner">
                 <div class="header__top">
                     <nav class="menu">
                         <ul class="menu__list">
-                            <li class="menu__list-item"><a class="menu__list-link" href="#">Информация</a></li>
+                            <li class="menu__list-item"><a class="menu__list-link" href="#">Главная</a></li>
                             <li class="menu__list-item"><a class="menu__list-link" href="#">Фото и видео</a></li>
                             <li class="menu__list-item logo"><a class="logo" href="#"><img src="images/logo.png" alt=""></a>
                             </li>
-                            <li class="menu__list-item"><a class="menu__list-link" href="#">Карта штата</a></li>
-                            <li class="menu__list-item menu__list-item--active"><a class="menu__list-link" href="#">Гостиницы</a>
+                            <li class="menu__list-item"><a class="menu__list-link" href="#">Форма отзыва</a></li>
+                            <li class="menu__list-item menu__list-item--active"><a class="menu__list-link" href="#">HTML academy</a>
                             </li>
                         </ul>
                     </nav>
+                    <a class="logo__mobile" href="#"><img src="images/logo__mobile.png" alt=""></a>
                 </div>
             </div>
         </header>
@@ -102,7 +126,7 @@
                                 <div class="hotels-search__bottom-filter__sort">
                                     <p class="hotels-search__bottom-filter__sort-title">Сортировка:</p>
                                     <ul class="hotels-search__bottom-filter__sort-list">
-                                        <li class="hotels-search__bottom-filter__sort-list__item hotels-search__bottom-filter__sort-list__item--active">
+                                        <li class="hotels-search__bottom-filter__sort-list__item hotels-search__bottom-filter__sort-list__item&#45;&#45;active">
                                             <a
                                                     class="hotels-search__bottom-filter__sort-list__link" href="#">По
                                                 цене</a></li>
@@ -118,7 +142,7 @@
                             <div class="hotels-search__bottom-filter__right">
                                 <div class="hotels-search__bottom-filter__arrows">
                                     <a class="hotels-search__bottom-filter__arrow" href="#"></a>
-                                    <a class="hotels-search__bottom-filter__arrow hotels-search__bottom-filter__arrow--active"
+                                    <a class="hotels-search__bottom-filter__arrow hotels-search__bottom-filter__arrow&#45;&#45;active"
                                        href="#"></a>
                                 </div>
                             </div>
@@ -249,6 +273,7 @@
                 </div>
             </div>
         </section>
+        <!--
         <footer class="footer footer__min">
             <div class="footer__inner">
                 <a class="footer__link" href="#">#visitSEDONA</a>
@@ -265,7 +290,7 @@
                     <a class="footer__by-link" href="#"></a>
                 </div>
             </div>
-        </footer>
+        </footer>-->
     </div>
 </div>
 <script src="js/main.min.js"></script>

@@ -3,6 +3,14 @@
     padding: 60px 60px 70px;
   }
 }
+@media(max-width: 1150px){
+  .hotels-search__bottom-filter__inner{
+    justify-content: space-around;
+  }
+  .hotels-search__items{
+    padding: 0 15px;
+  }
+}
 @media(max-width: 1100px){
   .benefits__position-img {
     margin-top: 0;
@@ -12,6 +20,12 @@
   }
   .benefits__items-positions .benefits__item {
     padding: 45px 52px 40px;
+  }
+  .hotels-search__top-left {
+    max-width: 310px;
+  }
+  .hotels-search__top-inner{
+    padding: 0 15px;
   }
 }
 @media(max-width: 1000px){
@@ -68,6 +82,9 @@
   .menu__list-item.logo {
     transform: translateY(15px);
   }
+  .header__min .header__inner .header__top .menu .menu__list .menu__list-item.logo{
+    transform: translateY(9px);
+  }
 }
 @media(max-width: 800px) {
   .benefits__position-img {
@@ -85,8 +102,20 @@
     max-width: 88%;
     margin: 0 auto 45px;
   }
-  .index .container{
+  .index .container,
+  .hotels .container{
     padding: 0;
+  }
+  .hotels-search__item-content__title {
+    font-size: 18px;
+    line-height: 22px;
+  }
+  .hotels-search__item-content__link{
+    font-size: 12px;
+    line-height: 14px;
+  }
+  .star-list__field {
+    margin-top: 41px;
   }
 }
 @media(max-width: 700px){
@@ -106,6 +135,22 @@
   .search-form__btn {
     padding: 16px 180px 17px;
     margin-top: 40px;
+  }
+  .hotels-search__top-btn {
+    padding: 7px 20px 8px;
+  }
+  .hotels-search__top-inner {
+    flex-direction: column;
+    align-items: center;
+  }
+  .hotels-search__top-right .hotels-search__top-title{
+    text-align: center;
+  }
+  .hotels-search__top-left{
+    margin-bottom: 40px;
+  }
+  .hotels-search__top {
+    padding: 29px 0 50px;
   }
 }
 @media(max-width: 650px) {
@@ -314,6 +359,53 @@
   .search-form__label:nth-child(4) .search-form__input-numerous {
     margin-left: 73px;
   }
+  .hotels-search__top {
+    padding: 50px 0;
+  }
+  .hotels-search__bottom-filter__left {
+    max-width: 470px;
+  }
+  .hotels-search__bottom-filter__sort-list__item + .hotels-search__bottom-filter__sort-list__item {
+    margin-left: 20px;
+  }
+  .hotels-search__bottom-filter__sort-title {
+    margin-right: 20px;
+  }
+}
+@media(max-width: 570px){
+  .hotels-search__item-inner {
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+  }
+  .star-list{
+    justify-content: center;
+  }
+  .star-list__field {
+    margin-top: 10px;
+    width: 100%;
+  }
+  .hotels-search__bottom-filter {
+    padding: 15px 0 15px;
+  }
+  .hotels-search__item-rate{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  .star-list__field{
+    text-align: center;
+  }
+  .hotels-search__item-content{
+    margin-bottom: 40px;
+  }
+  .hotels-search__bottom-filter__inner {
+    flex-direction: column;
+    align-items: center;
+  }
+  .hotels-search__bottom-filter__right{
+    margin-bottom: 10px;
+  }
 }
 @media(max-width: 550px){
   .benefits__top-items{
@@ -394,6 +486,12 @@
   .search-form{
     max-width: 450px;
   }
+  .hotels-search__bottom-filter__sort-list__item + .hotels-search__bottom-filter__sort-list__item {
+    margin-left: 10px;
+  }
+  .hotels-search__bottom-filter__left{
+    padding: 0 10px;
+  }
 }
 @media(max-width: 450px) {
   .search-top__link {
@@ -422,6 +520,29 @@
     font-size: 18px;
     line-height: 23px;
     margin-top: 25px;
+  }
+  .hotels-search__item-content{
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .hotels-search__item-content__textarea{
+    margin-left: 0;
+  }
+  .hotels-search__item-content__fields{
+    max-width: 100%;
+  }
+  .hotels-search__bottom-filter__left{
+    display: block;
+    max-width: 100%;
+    text-align: center;
+  }
+  .hotels-search__bottom-filter__sort{
+    justify-content: center;
+    text-align: center;
+  }
+  .hotels-search__bottom-filter__title{
+    margin-bottom: 10px;
   }
 }
 @media(max-width: 400px){
@@ -466,6 +587,12 @@
   }
   .search-form {
     padding: 10px;
+  }
+  .irs--flat .irs-line {
+    width: 300px;
+  }
+  .hotels-search__top-right .hotels-search__top-title::before, .hotels-search__top-right .hotels-search__top-title::after {
+    width: 300px;
   }
 }
 @media(max-width:350px){
