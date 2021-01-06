@@ -11,14 +11,39 @@
 <body>
 <div class="container">
     <div class="content__wrapper">
+        <nav class="menu menu__slick">
+            <div class="menu__close">
+                <div></div>
+                <div></div>
+            </div>
+            <ul class="menu__list-mobile">
+                <li class="menu__list-item menu__list-item--active"><a class="menu__list-link" href="#">Главная</a></li>
+                <li class="menu__list-item"><a class="menu__list-link" href="#">Фото и видео</a></li>
+                <li class="menu__list-item logo"><a class="logo" href="#">
+                    <picture>
+                        <source srcset="images/logo__tablet.png" media="(max-width: 830px)">
+                        <img src="images/logo.png" alt=""></picture>
+                </a>
+                </li>
+                <li class="menu__list-item"><a class="menu__list-link" href="#">Форма отзыва</a></li>
+                <li class="menu__list-item"><a class="menu__list-link" href="#">HTML academy</a></li>
+            </ul>
+            <div class="menu__mobile">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+        </nav>
         <header class="header header__change" style="background-image: url('images/header__bg.jpg');">
             <div class="header__inner">
                 <div class="header__top">
                     <nav class="menu">
                         <ul class="menu__list">
-                            <li class="menu__list-item"><a class="menu__list-link" href="#">Информация</a></li>
+                            <li class="menu__list-item"><a class="menu__list-link" href="#">Главная</a></li>
                             <li><a class="menu__list-link" href="#">Фото и видео</a></li>
-                            <li class="menu__list-item logo"><a class="logo" href="#"><img src="images/logo.png" alt=""></a>
+                            <li class="menu__list-item logo"><a class="logo" href="#"><picture>
+                                <source srcset="images/logo__tablet.png" media="(max-width: 830px)">
+                                <img src="images/logo.png" alt=""></picture></a>
                             </li>
                             <li class="menu__list-item"><a class="menu__list-link" href="#">Форма отзыва</a></li>
                             <li class="menu__list-item"><a class="menu__list-link" href="#">HTML academy</a></li>
@@ -89,6 +114,7 @@
                 </div>
             </div>
         </section>
+        <!--
         <section class="video">
             <div class="video__textarea">
                 <h2 class="video__title title">Все еще сомневаетесь?</h2>
@@ -123,7 +149,7 @@
                     <a class="footer__by-link" href="#"></a>
                 </div>
             </div>
-        </footer>
+        </footer>-->
     </div>
 </div>
 <script src="js/main.min.js"></script>
