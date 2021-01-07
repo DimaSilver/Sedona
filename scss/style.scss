@@ -898,6 +898,9 @@
     background-color: rgba(#000, .3);
     align-items: center;
   }
+  &__bottom-item__img{
+    object-fit: cover;
+  }
   &__bottom-item__info-left__title{
     color: #fff;
     margin-bottom: -5px;
