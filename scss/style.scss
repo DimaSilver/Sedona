@@ -955,6 +955,10 @@
     padding: 36px 42px 37px 35px;
     align-items: center;
   }
+  &__watch-info__responsive{
+    position: absolute;
+    display: none;
+  }
   &__watch-info__timeline{
     max-width: 540px;
     width: 100%;
