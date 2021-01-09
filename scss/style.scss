@@ -955,10 +955,45 @@
     padding: 36px 42px 37px 35px;
     align-items: center;
   }
+  &__watch-info__repeat,
+  &__watch-info__subtitles,
+  &__watch-info__fullscreen{
+    transition: all .3s;
+    &:hover{
+      opacity: .6;
+    }
+    &.video__watch-info--active{
+      opacity: .3;
+    }
+  }
   &__watch-info__responsive{
     position: absolute;
     display: none;
   }
+  &__watch-info__responsive-repeat{
+    &:hover{
+    background-image: url('../images/replay-responsive__hover.png');
+    }
+  }
+  &__watch-info__responsive-subtitles{
+    &:hover{
+      background-image: url('../images/subtitles-responsive__hover.png');
+    }
+  }
+  &__watch-info__responsive-fullscreen{
+    &:hover{
+      background-image: url('../images/fullscreen-responsive__hover.png');
+    }
+  }
+  &__watch-info__responsive-repeat,
+  &__watch-info__responsive-subtitles,
+  &__watch-info__responsive-fullscreen{
+    transition: opacity .3s;
+    &.video__watch-info__responsive--active{
+      opacity: .3;
+    }
+  }
+
   &__watch-info__timeline{
     max-width: 540px;
     width: 100%;
@@ -1063,7 +1098,7 @@
   &__radio{
     width: 56px;
     height: 56px;
-    background-color: #e5e5e5;
+    background-color: #f2f2f2;
   }
   &__input{
     @extend %ptsans-bold;
@@ -1093,8 +1128,11 @@
       .review__input{
         background-color: #d5d5d5;
       }
+      .jq-radio.checked{
+        background-color: #d5d5d5;
+      }
       .jq-radio.checked .jq-radio__div{
-        background-color: rgba(#333333, .3);
+        background-color: #a4a4a4;
       }
     }
     &.review__item-label--active .review__input{
@@ -1290,21 +1328,20 @@
 .jq-radio.checked .jq-radio__div {
   width: 22px;
   height: 22px;
-  margin: 1px 0 0 -4px;
+  margin: 17px 0 0 17px;
   background: #333333;
   box-shadow: none;
 }
-/*.jq-radio.checked{
-  &:hover .jq-radio__div{
-
-  }
-}*/
 .jq-checkbox, .jq-radio {
   border: none;
   box-shadow: none;
 }
 .jq-radio{
   background: #f2f2f2;
+  transition: all .3s;
+  &:hover{
+    background: #e5e5e5;
+  }
 }
 .jq-checkbox.focused, .jq-radio.focused{
   border: none;

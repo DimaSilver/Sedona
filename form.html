@@ -18,7 +18,9 @@
                         <ul class="menu__list">
                             <li class="menu__list-item"><a class="menu__list-link" href="#">Информация</a></li>
                             <li><a class="menu__list-link" href="#">Фото и видео</a></li>
-                            <li class="menu__list-item logo"><a class="logo" href="#"><img src="images/logo.png" alt=""></a>
+                            <li class="menu__list-item logo"> <picture>
+                                <source srcset="images/logo__tablet.png" media="(max-width: 830px)">
+                                <img src="images/logo.png" alt=""></picture>
                             </li>
                             <li class="menu__list-item"><a class="menu__list-link" href="#">Форма отзыва</a></li>
                             <li class="menu__list-item"><a class="menu__list-link" href="#">HTML academy</a></li>
@@ -44,15 +46,15 @@
                         <div class="review__item">
                             <h3 class="review__item-title review__second-title">ВАше Общее впечатление:</h3>
                             <label class="review__item-label">
-                                <input type="radio" class="review__input review__radio">
+                                <input type="radio" class="review__radio">
                                 Скорее положительное
                             </label>
                             <label class="review__item-label">
-                                <input type="radio" class="review__input review__radio">
+                                <input type="radio" class="review__radio">
                                 Скорее отрицательное
                             </label>
                             <label class="review__item-label">
-                                <input type="radio" class="review__input review__radio">
+                                <input type="radio" class="review__radio">
                                 Затрудняюсь ответить
                             </label>
                         </div>
@@ -74,6 +76,7 @@
                             </div>
                         </div>
                     </div>
+
                     <div class="review__contacts review__lines">
                         <h3 class="review__contacts-title review__second-title">Контактная информация:</h3>
                         <div class="review__item-labels">

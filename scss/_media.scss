@@ -28,15 +28,76 @@
     padding: 0 15px;
   }
 }
+@media(max-width: 1020px){
+  .review__item:first-child .review__item-title {
+    text-align: left;
+  }
+  .review__items{
+    justify-content: center;
+  }
+  .review__item {
+    max-width: 420px;
+  }
+  .review__item-labels,
+  .review__sights-list,
+  .review__emotions{
+    padding: 0 10px;
+  }
+  .review__contacts-label + .review__contacts-label {
+    margin-left: 45px;
+  }
+  .review__btn{
+    margin-left: 10px;
+  }
+  .review__description {
+    right: 10px;
+  }
+}
 @media(max-width: 1000px){
   .benefits__position-textarea {
     max-width: 350px;
+  }
+  .review {
+     padding: 80px 0 70px;
   }
 }
 @media(max-width: 970px){
   .benefits__items-positions .benefits__item-title {
     margin: 0 0 18px;
     white-space: pre-line;
+  }
+  .review__contacts-label::after {
+    top: auto;
+    bottom: 0;
+  }
+  .review__contacts-label .review__contacts-input{
+    display: block;
+    margin-left: 0;
+    margin-top: 10px;
+    max-width: 100%;
+  }
+  .review__contacts-label:first-child::before {
+    top: auto;
+    bottom: 20px;
+  }
+  .review__contacts-label:nth-child(2)::before {
+    top: auto;
+    bottom: 23px;
+  }
+  .review__contacts-label.review__item-label + .review__contacts-label.review__item-label {
+    margin-top: 26px;
+    margin-left: 0;
+  }
+  .review__item-labels {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .review__contacts-title {
+    margin-bottom: 50px;
+  }
+  .review__contacts-label{
+    width: 100%;
   }
 }
 @media(max-width: 950px){
@@ -48,6 +109,9 @@
   }
   .benefits__items-positions .benefits__item {
     padding: 45px 40px 40px;
+  }
+  .review__btn {
+    padding: 16px 120px 17px;
   }
 }
 @media(max-width: 900px){
@@ -66,6 +130,21 @@
   .gallery__bottom-item__info-like__counter{
     font-weight: 700;
   }
+  .review__item {
+    max-width: 370px;
+  }
+  .review__item:nth-child(2) .review__item-labels .review__item-label .review__input{
+    max-width: 225px;
+  }
+  .review__form {
+    margin-top: 75px;
+  }
+  .review__lines::before, .review__lines::after {
+    width: 250px;
+  }
+  .review__btn {
+    padding: 16px 100px 17px;
+  }
 }
 @media(max-width: 850px){
   .header__bottom {
@@ -82,6 +161,54 @@
   }
   .search-top__link {
     padding: 25px 95px 26px;
+  }
+  .review__item:nth-child(2) .review__item-labels .review__item-label:first-child .review__input {
+    max-width: 240px;
+  }
+  .review__item:nth-child(2) .review__item-labels .review__item-label .review__input {
+    max-width: 203px;
+  }
+  .review__item-labels,
+  .review__sights-list,
+  .review__emotions {
+    padding: 0;
+  }
+  .review__contacts,
+  .review__sights,
+  .review__emotions{
+    max-width: 648px;
+    margin: 0 auto;
+  }
+  .review__lines::before, .review__lines::after {
+    width: 125px;
+  }
+  .review__contacts-title {
+    margin-bottom: 40px;
+  }
+  .review__sights-list {
+    flex-wrap: wrap;
+    max-width: 460px;
+    margin: 0 auto;
+    justify-content: unset;
+  }
+  .review__sights-list__field:first-child{
+    margin-right: 44px;
+  }
+  .review__sights-list__field:nth-child(3){
+    margin-right: 65px;
+    margin-top: 32px;
+  }
+  .review__sights-list__field:nth-child(4){
+    margin-top: 32px;
+  }
+  .review__btn {
+    padding: 16px 70px 17px;
+  }
+  .review__btn {
+    margin-left: 60px;
+  }
+  .review__description {
+    right: 60px;
   }
 }
 @media(max-width: 830px){
@@ -161,10 +288,31 @@
   .video {
     padding: 60px 60px 40px;
   }
+  .review__item {
+     max-width: 340px;
+   }
+  .review__item:nth-child(2) {
+    padding-left: 60px;
+  }
+  .review {
+    padding: 70px 0 61px;
+  }
+  .review__contacts-title {
+    margin-bottom: 30px;
+  }
 }
 @media(max-width: 770px){
   .video__watch-info__timeline {
     max-width: 389px;
+  }
+  .review__item {
+    max-width: 324px;
+  }
+  .review__item:nth-child(2) .review__item-labels .review__item-label:first-child .review__input {
+    max-width: 216px;
+  }
+  .review__item:nth-child(2) .review__item-labels .review__item-label .review__input {
+    max-width: 178px;
   }
 }
 @media(max-width: 760px){

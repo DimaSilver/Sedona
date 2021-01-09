@@ -100,7 +100,7 @@ $(function () {
     $('.hotels-search__item-content__title').on("click", function () {
        $(this).toggleClass('hotels-search__item-content__title--active')
     });
-    $('.review__input, .review__sights-list__field-checkbox').styler();
+    $('.review__input, .review__sights-list__field-checkbox, .review__radio').styler();
     $('.menu__mobile').on('click', function(){
         $('.menu__list-mobile').slideToggle();
     });
@@ -118,5 +118,11 @@ $(function () {
     });
     $('.menu__list-mobile').on("click", ".menu__list-item", function () {
         $(this).addClass('menu__list-item--active').siblings().removeClass('menu__list-item--active')
+    });
+    $('.video__watch-info__repeat, .video__watch-info__subtitles, .video__watch-info__fullscreen').on("click", function () {
+       $(this).toggleClass('video__watch-info--active');
+    });
+    $('.video__watch-info__responsive-repeat, .video__watch-info__responsive-subtitles, .video__watch-info__responsive-fullscreen').on("click", function () {
+        $(this).toggleClass('video__watch-info__responsive--active');
     });
 });
