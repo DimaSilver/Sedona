@@ -102,9 +102,9 @@
   &__position-textarea {
     background-color: #81b3d2;
     color: #fff;
-    padding: 45px 50px 60px;
+    padding: 30px 50px 30px;
     max-width: 400px;
-    max-height: 256px;
+    min-height: 256px;
   }
   &__position-title.benefits__title {
     color: #fff;
