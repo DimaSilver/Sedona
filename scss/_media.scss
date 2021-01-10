@@ -363,6 +363,31 @@
   .video {
     padding: 60px 40px 40px;
   }
+  .review__item {
+    max-width: 300px;
+  }
+  .review__item:nth-child(2) {
+    padding-left: 32px;
+  }
+  .review__title {
+    font-size: 27px;
+    line-height: 33px;
+  }
+  .review__btn {
+    margin-left: 20px;
+  }
+  .review__description {
+    right: 20px;
+  }
+}
+@media(max-width: 680px){
+  .review__item .review__item-title{
+    margin-bottom: 40px;
+  }
+  .review__contacts, .review__sights, .review__emotions {
+    max-width: 600px;
+    margin: 0 auto;
+  }
 }
 @media(max-width: 670px){
   .video__watch-info__timeline {
@@ -393,6 +418,82 @@
   }
   .video__watch-info__fullscreen {
     margin-left: 20px;
+  }
+  .review {
+    padding: 55px 0 61px;
+  }
+  .review__form {
+    margin-top: 50px;
+  }
+  .review__items {
+    padding-bottom: 40px;
+    flex-direction: column;
+  }
+  .review__item{
+    max-width: 100%;
+    padding: 0 20px;
+    position: relative;
+  }
+  .review__item,
+  .review__contacts,
+  .review__sights,
+  .review__emotions{
+    padding-top: 21px;
+    &::before{
+      position: absolute;
+      content: "";
+      background-color: #e5e5e5;
+      max-width: 100%;
+      height: 1px;
+      width: 100%;
+      left: 0;
+      top: 0;
+    }
+  }
+  .review__item:nth-child(2)::before{
+    position: absolute;
+    content: "";
+    background-color: #e5e5e5;
+    max-width: 105%;
+    height: 1px;
+    width: 100%;
+    left: 0;
+  }
+  .review__item:nth-child(2) {
+    order: -1;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-bottom: 25px;
+  }
+  .review__item-title,
+  .review__item:first-child .review__item-title{
+    text-align: center;
+  }
+  .review__item:nth-child(2) .review__item-labels .review__item-label:first-child .review__input,
+  .review__item:nth-child(2) .review__item-labels .review__item-label .review__input{
+    max-width: 100%;
+  }
+  .review__item .review__item-label{
+    justify-content: center;
+  }
+  .review__contacts, .review__sights, .review__emotions {
+    max-width: 100%;
+    margin: 0 auto;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .review__contacts::after,
+  .review__lines::after{
+    display: none;
+  }
+  .review__sights.review__lines::before{
+    top: 0;
+  }
+  .review__sights.review__lines::after{
+    display: none;
+  }
+  .review__sights-title {
+    margin-bottom: 35px;
   }
 }
 @media(max-width: 640px){
@@ -614,6 +715,30 @@
   .video {
     padding: 40px 20px 40px;
   }
+  .menu__slick{
+    &::before{
+      position: absolute;
+      content: "";
+      background-image: url('../images/shadow__menu-mobile.png');
+      max-width: 100%;
+      width: 100%;
+      height: 7px;
+      bottom: 0;
+    }
+  }
+  .review__title {
+    font-size: 24px;
+    line-height: 30px;
+  }
+  .review__success-title,
+  .review__fail-title{
+    font-size: 27px;
+    line-height: 37px;
+    margin-bottom: 30px;
+  }
+  .review__fail {
+    padding: 40px 55px 35px;
+  }
 }
 @media(max-width: 570px){
   .hotels-search__item-inner {
@@ -669,6 +794,9 @@
   .video__watch-info {
     padding: 36px 23px 37px 23px;
   }
+  .review__success-top {
+    padding: 45px 90px 30px;
+  }
 }
 @media(max-width: 550px){
   .benefits__top-items{
@@ -720,6 +848,25 @@
   }
   .gallery__bottom {
     padding: 0 30px;
+  }
+  .review__form {
+    margin-top: 35px;
+  }
+  .review {
+    padding: 40px 0 61px;
+  }
+  .review__emotions-title {
+    margin-bottom: 40px;
+  }
+  .review__description{
+    bottom: -30px;
+    left: 20px;
+    right: auto;
+  }
+  .review__fail-title,
+  .review__success-title{
+    font-size: 24px;
+    line-height: 34px;
   }
 }
 @media(max-width: 500px){
@@ -823,6 +970,54 @@
     display: flex;
     align-items: center;
   }
+  .review__second-title {
+    font-size: 18px;
+    line-height: 23px;
+  }
+  .review__emotions-title {
+    margin-bottom: 20px;
+  }
+  .review__sights {
+    padding-bottom: 40px;
+  }
+  .review__sights-title {
+    margin-bottom: 20px;
+  }
+  .review__items {
+    padding-bottom: 30px;
+  }
+  .review__item .review__item-title {
+    margin-bottom: 25px;
+  }
+  .review__title {
+    font-size: 21px;
+    line-height: 27px;
+  }
+  .review__success-bottom {
+    padding: 30px 70px;
+  }
+  .review__success-top {
+    padding: 45px 70px 30px;
+  }
+}
+@media(max-width: 465px){
+  .review__sights-list {
+    flex-direction: column;
+  }
+  .review__sights-list__field:first-child {
+    margin-right: 0;
+  }
+  .review__sights-list__field:nth-child(3) {
+    margin-right: 0;
+  }
+  .review__sights-list__field:nth-child(2),
+  .review__sights-list__field:nth-child(3),
+  .review__sights-list__field:nth-child(4){
+    margin-top: 24px;
+  }
+  .review__sights {
+    padding-bottom: 25px;
+  }
 }
 @media(max-width: 450px) {
   .search-top__link {
@@ -918,6 +1113,27 @@
   .video__textarea {
     max-width: 320px;
   }
+  .review__emotions.review__lines {
+    padding-bottom: 51px;
+  }
+  .review__btn {
+    padding: 16px 55px 17px;
+  }
+  .review__fail-title,
+  .review__success-title{
+    font-size: 21px;
+    line-height: 31px;
+  }
+  .mfp-container {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .review__success-bottom {
+    padding: 30px 40px;
+  }
+  .review__success-top {
+    padding: 45px 55px 30px;
+  }
 }
 @media(max-width: 400px){
   .header__bottom-title {
@@ -973,6 +1189,44 @@
   .video__textarea {
     max-width: 280px;
   }
+  .review__contacts{
+    padding-bottom: 40px;
+  }
+  .review__contacts-label.review__item-label + .review__contacts-label.review__item-label {
+    margin-top: 15px;
+  }
+  .review__item-label + .review__item-label {
+    margin-top: 15px;
+  }
+  .review__contacts {
+    padding-bottom: 28px;
+  }
+  .review__form {
+    margin-top: 22px;
+  }
+  .review__title {
+    font-size: 18px;
+    line-height: 24px;
+  }
+  .review__item:first-child .review__item-label:first-child .review__radio{
+    margin-right: 15px;
+  }
+  .review__item:nth-child(2) .review__item-labels .review__item-label:first-child .review__input {
+    max-width: 230px;
+  }
+  .review__item:nth-child(2) .review__item-labels .review__item-label .review__input {
+    max-width: 192px;
+  }
+  .review__fail-title,
+  .review__success-title{
+    font-size: 18px;
+    line-height: 28px;
+  }
+  .review__success-btn,
+  .review__fail-btn{
+    font-size: 18px;
+    line-height: 21px;
+  }
 }
 @media(max-width: 380px){
   .search-top__link {
@@ -991,6 +1245,15 @@
   }
   .video__textarea {
     margin-bottom: 40px;
+  }
+  .review__btn {
+    padding: 16px 46px 17px;
+  }
+  .review__fail {
+    padding: 40px 50px 35px;
+  }
+  .review__success-bottom {
+    padding: 20px;
   }
 }
 @media(max-width: 360px){
